@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:jee="http://www.springframework.org/schema/jee" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-2.5.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-2.5.xsd"
+	default-lazy-init="true">
+
+	<!-- 使用annotation 自动注册bean,并检查@Required,@Autowired的属性已被注入 -->
+	<context:component-scan base-package="com.zoom.nos.provision.service" />
+	<context:annotation-config />
+
+	<context:property-placeholder location="classpath:jdbc.properties" />
+	
+	<!-- 数据源 -->
+    <bean id="dataSource" class="com.zoom.commons.proxool.DecryptProxoolDataSource" destroy-method="close">
+        <property name="driver" value="org.apache.derby.jdbc.ClientDriver"/>
+        <property name="driverUrl" value="jdbc:derby://127.0.0.1:1527/zmnos-provision-db;create=false"/>
+        <property name="user" value="${local.jdbc.username}"/>
+        <property name="password" value="${local.jdbc.password}"/>
+    </bean>
+	
+	<bean id="dataSourceFacede" class="org.logicalcobwebs.proxool.ProxoolFacade"
+	destroy-method="shutdown"></bean>
+		
+	<!-- 事务管理器配置 -->
+	<bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+
+	<!-- 使用annotation定义事务 -->
+	<tx:annotation-driven transaction-manager="transactionManager" />
+
+	<!-- 保证POJO中标注@Required的属性被注入 -->
+	<bean class="org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor" />
+	
+</beans>

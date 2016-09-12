@@ -1,0 +1,102 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.zoom.nos</groupId>
+  <artifactId>zmnos-provision</artifactId>
+  <packaging>jar</packaging>
+  
+  <version>3.3.2</version>
+  <name>zoomtech net operation service provision</name>
+  <inceptionYear>2008</inceptionYear>
+  <url>http://www.zoomtech.com.cn</url>
+
+   <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>1.5</source>
+          <target>1.5</target>
+          <encoding>GBK</encoding>
+       </configuration>
+     </plugin>
+    </plugins>
+  </build>
+
+	<!-- jar version -->
+	<properties>
+		<spring.version>2.5.6</spring.version>
+	</properties>
+	
+	<dependencies>
+	<!-- apache commcons lang -->
+	<dependency>
+	  <groupId>commons-lang</groupId>
+	  <artifactId>commons-lang</artifactId>
+	  <version>2.4</version>
+	</dependency>
+	<dependency>
+		<groupId>commons-collections</groupId>
+		<artifactId>commons-collections</artifactId>
+		<version>3.2</version>
+	</dependency>	
+	
+	<!-- logback -->
+	<dependency>
+	  <groupId>ch.qos.logback</groupId>
+	  <artifactId>logback-classic</artifactId>
+	  <version>0.9.9</version>
+	</dependency>
+
+	<!-- snmp4j -->
+	<dependency>
+	  <groupId>org.snmp4j</groupId>
+	  <artifactId>snmp4j</artifactId>
+	  <version>1.9.1f</version>
+	</dependency>
+
+	<!-- spring begin -->   
+    <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-jdbc</artifactId>
+        <version>${spring.version}</version>
+    </dependency>
+	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-aop</artifactId>
+		<version>${spring.version}</version>
+	</dependency>
+	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-context-support</artifactId>
+		<version>${spring.version}</version>
+	</dependency>	
+	<!-- spring end -->
+	
+	<!-- task -->
+	<dependency>
+		<groupId>opensymphony</groupId>
+		<artifactId>quartz-all</artifactId>
+		<version>1.6.4</version>
+	</dependency>	
+
+	<dependency>
+		<groupId>cglib</groupId>
+		<artifactId>cglib-nodep</artifactId>
+		<version>2.1_3</version>
+	</dependency>
+
+	<dependency>
+		<groupId>org.apache.derby</groupId>
+		<artifactId>derbyclient</artifactId>
+		<version>10.4.2.0</version>
+	</dependency>
+    <dependency>
+      <groupId>com.sybase</groupId>
+      <artifactId>jdbc-sybase</artifactId>
+      <version>5.2</version>
+    </dependency>
+    
+	</dependencies>
+</project>

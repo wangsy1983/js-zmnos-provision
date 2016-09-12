@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" output="target/classes" path="src/main/java"/>
+	<classpathentry excluding="**" kind="src" output="target/classes" path="src/main/resources"/>
+	<classpathentry kind="con" path="org.maven.ide.eclipse.MAVEN2_CLASSPATH_CONTAINER"/>
+	<classpathentry kind="lib" path="lib/adsl-if.jar"/>
+	<classpathentry kind="lib" path="lib/adsl-tl1-1.0.13.1.jar"/>
+	<classpathentry kind="lib" path="lib/adsl-tl1-1.0.14.1.jar"/>
+	<classpathentry kind="lib" path="lib/adsl-tl1-1.0.14.jar"/>
+	<classpathentry kind="lib" path="lib/adsl-tl1-1.0.16.1.jar"/>
+	<classpathentry kind="lib" path="lib/adsl-tl1-1.0.16.2.jar"/>
+	<classpathentry kind="lib" path="lib/adsl-tl1-3.0.0.jar"/>
+	<classpathentry kind="lib" path="lib/adsl-tl1-3.0.1.jar"/>
+	<classpathentry kind="lib" path="lib/adsl-tl1-3.0.2.jar"/>
+	<classpathentry kind="lib" path="lib/adsl-tl1-3.0.3.jar"/>
+	<classpathentry kind="lib" path="lib/adsl-tl1-3.3.2.jar"/>
+	<classpathentry kind="lib" path="lib/adsl-tl1-3.3.2.jar_bak130412"/>
+	<classpathentry kind="lib" path="lib/adsl-tl1-3.3.2.jar1127bak"/>
+	<classpathentry kind="lib" path="lib/adsl-tl1-3.3.2.jar20130412bak"/>
+	<classpathentry kind="lib" path="lib/adsl-wo-3.1.0.jar"/>
+	<classpathentry kind="lib" path="lib/aopalliance-1.0.jar"/>
+	<classpathentry kind="lib" path="lib/AppDBConn.jar"/>
+	<classpathentry kind="lib" path="lib/axis.jar"/>
+	<classpathentry kind="lib" path="lib/bsh-2.0b4.jar"/>
+	<classpathentry kind="lib" path="lib/cglib-nodep-2.1_3.jar"/>
+	<classpathentry kind="lib" path="lib/commons-collections-3.2.jar"/>
+	<classpathentry kind="lib" path="lib/commons-dbcp-1.2.2.jar"/>
+	<classpathentry kind="lib" path="lib/commons-discovery-0.2.jar"/>
+	<classpathentry kind="lib" path="lib/commons-lang-2.4.jar"/>
+	<classpathentry kind="lib" path="lib/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="lib/commons-pool-1.3.jar"/>
+	<classpathentry kind="lib" path="lib/derbyclient-10.4.2.0.jar"/>
+	<classpathentry kind="lib" path="lib/ireasoningtl1.jar"/>
+	<classpathentry kind="lib" path="lib/javaee.jar"/>
+	<classpathentry kind="lib" path="lib/jdbc-sybase-5.2.jar"/>
+	<classpathentry kind="lib" path="lib/log4j-1.2.8.jar"/>
+	<classpathentry kind="lib" path="lib/logback-classic-0.9.9.jar"/>
+	<classpathentry kind="lib" path="lib/logback-core-0.9.9.jar"/>
+	<classpathentry kind="lib" path="lib/proxool-0.9.1.jar"/>
+	<classpathentry kind="lib" path="lib/proxool-cglib.jar"/>
+	<classpathentry kind="lib" path="lib/quartz-all-1.6.4.jar"/>
+	<classpathentry kind="lib" path="lib/slf4j-api-1.5.0.jar"/>
+	<classpathentry kind="lib" path="lib/snmp4j-1.9.1f.jar"/>
+	<classpathentry kind="lib" path="lib/spring-aop-2.5.6.jar"/>
+	<classpathentry kind="lib" path="lib/spring-beans-2.5.6.jar"/>
+	<classpathentry kind="lib" path="lib/spring-context-2.5.6.jar"/>
+	<classpathentry kind="lib" path="lib/spring-context-support-2.5.6.jar"/>
+	<classpathentry kind="lib" path="lib/spring-core-2.5.6.jar"/>
+	<classpathentry kind="lib" path="lib/spring-jdbc-2.5.6.jar" sourcepath="C:/Users/Administrator/.m2/repository/org/springframework/spring-jdbc/2.5.6/spring-jdbc-2.5.6-sources.jar"/>
+	<classpathentry kind="lib" path="lib/spring-tx-2.5.6.jar"/>
+	<classpathentry kind="lib" path="lib/wsdl4j-1.6.2.jar"/>
+	<classpathentry kind="lib" path="lib/zmenadapter-0.0.1.jar"/>
+	<classpathentry kind="lib" path="lib/zmnos-proxool-0.0.1.jar"/>
+	<classpathentry kind="lib" path="lib/zmnos-tongbu-0.0.1.jar"/>
+	<classpathentry kind="lib" path="lib/zoom-common.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>

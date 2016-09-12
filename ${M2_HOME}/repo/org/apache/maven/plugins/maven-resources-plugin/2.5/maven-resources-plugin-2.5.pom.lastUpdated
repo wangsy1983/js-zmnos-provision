@@ -1,0 +1,5 @@
+#NOTE: This is an internal implementation file, its format can be changed without prior notice.
+#Mon Aug 01 15:32:03 CST 2016
+http\://uk.maven.org/maven2/.lastUpdated=1470036723948
+default-http\://maven.oschina.net/content/groups/public/.lastUpdated=1470035630483
+http\://maven.oschina.net/content/groups/public/.error=Could not transfer artifact org.apache.maven.plugins\:maven-resources-plugin\:pom\:2.5 from/to nexus-osc (http\://maven.oschina.net/content/groups/public/)\: Connect to maven.oschina.net\:80 [maven.oschina.net/183.78.182.122] failed\: Operation timed out

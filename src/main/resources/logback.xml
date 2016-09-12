@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<configuration>
+
+	<appender name="STDOUT"
+		class="ch.qos.logback.core.ConsoleAppender">
+		<layout class="ch.qos.logback.classic.PatternLayout">
+			<!--pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger %caller{1} - %msg%n</pattern-->
+			<!--pattern>%date [%thread] %-5level  %caller{1} - %msg%n</pattern-->
+			<pattern>%date [%-5level %thread %logger{40}] %msg%n</pattern>			
+		</layout>
+	</appender>
+
+	<appender name="logfile" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<Encoding>GB18030</Encoding>
+		<File>../log/zmnos-provision.log</File>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<FileNamePattern>../log/zmnos-provision.%d{yyyy-MM-dd}.log.zip</FileNamePattern>
+		</rollingPolicy>
+		<layout class="ch.qos.logback.classic.PatternLayout">
+			<pattern>%date [%-5level %thread %logger{40}] %msg%n</pattern>
+		</layout>
+	</appender>
+
+
+	<logger name="com.zoom.nos.provision" additivity="false">
+		<level value="DEBUG" />
+		<appender-ref ref="logfile" />
+		<appender-ref ref="STDOUT" />
+	</logger>
+
+
+	<root>
+		<level value="ERROR" />
+		<appender-ref ref="logfile" />
+		<appender-ref ref="STDOUT" />
+	</root>
+</configuration>
